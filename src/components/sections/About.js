@@ -209,6 +209,7 @@ const ListItem = styled.li`
   text-indent: 2rem;
   line-height: 2rem;
   font-size: ${(props) => props.theme.fontsm};
+  display: flex;
 
   .fill-play {
     color: ${(props) => props.theme.text};

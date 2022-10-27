@@ -159,6 +159,7 @@ const Tag = styled.span`
 const Linkz = styled.div`
   padding-top: 1.5rem;
   font-size: ${(props) => props.theme.fontlg};
+  display: flex;
 `;
 const Visit = styled.a`
   padding-right: 1rem;

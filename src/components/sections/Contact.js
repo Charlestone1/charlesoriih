@@ -198,6 +198,10 @@ const Btn = styled.a`
   transition: all 0.2s ease;
   position: relative;
 
+  @media (max-width: 48em) {
+    padding: 0.4rem 0.9rem;
+  }
+
   &:hover {
     transform: scale(0.9);
   }

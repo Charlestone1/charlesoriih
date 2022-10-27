@@ -68,6 +68,7 @@ const TitleSubText = styled.h3`
   }
 
   @media (max-width: 48em) {
+    font-size: ${(props) => props.theme.fontml};
     align-self: center;
     text-align: center;
   }
@@ -84,12 +85,9 @@ const SubTitle = styled.h3`
   letter-spacing: 1px;
 
   @media (max-width: 48em) {
+    font-size: ${(props) => props.theme.fontml};
     align-self: center;
     text-align: center;
-  }
-
-  @media (max-width: 40em) {
-    font-size: ${(props) => props.theme.fontmd};
   }
 `;
 

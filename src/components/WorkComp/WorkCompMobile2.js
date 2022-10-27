@@ -72,7 +72,7 @@ const DetailsBox = styled.div`
   align-items: flex-end;
   justify-content: center;
   margin: 6rem 0;
-  background-color: ${(props) => `rgba(${props.theme.bodyRgba},0.9)`};
+  background-color: ${(props) => `rgba(${props.theme.bodyRgba},0.75)`};
 
   @media (max-width: 42em) {
     margin: 4.5rem 0;
@@ -115,7 +115,7 @@ const ProjectName = styled.a`
 `;
 
 const Desc = styled.div`
-  background-color: ${(props) => `rgba(${props.theme.bodyRgba},0.85)`};
+  background-color: ${(props) => `rgba(${props.theme.bodyRgba},0.8)`};
   color: ${(props) => props.theme.slate};
   /* color: #fff; */
   padding: 10px;
@@ -151,6 +151,7 @@ const Tag = styled.span`
 const Linkz = styled.div`
   padding-top: 0.3rem;
   font-size: ${(props) => props.theme.fontlg};
+  display: flex;
 `;
 const Visit = styled.a`
   padding-right: 1rem;
