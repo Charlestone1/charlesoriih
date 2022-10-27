@@ -1,8 +1,7 @@
 import React from "react";
-import { useState } from "react";
 import styled from "styled-components";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
-import NairaPay from "../../assets/images/MobileImage/NairaPayMobile.png";
+import NairaPay from "../../assets/images/MobileImage/NairaPayMobileTrans.png";
 
 const Box = styled.div`
   display: flex;

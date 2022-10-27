@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import styled from "styled-components";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
-import EcomImg from "../../assets/images/MobileImage/EcomMobile.png";
+import EcomImg from "../../assets/images/MobileImage/EcomMobileTrans.png";
 
 const Box = styled.div`
   display: flex;
