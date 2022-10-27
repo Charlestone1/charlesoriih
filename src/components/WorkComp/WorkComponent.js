@@ -1,7 +1,5 @@
 import React from "react";
-import { useState } from "react";
 import styled from "styled-components";
-// import WorkData from "../assets/data/WorkData";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 const Box = styled.div`
@@ -177,8 +175,7 @@ const Git = styled.a`
 `;
 
 const WorkComponent = (props) => {
-  const { id, order, type, name, description, tags, visit, github, imgSrc } =
-    props.work;
+  const { type, name, description, tags, visit, github, imgSrc } = props.work;
 
   return (
     <Box>

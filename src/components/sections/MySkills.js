@@ -222,10 +222,10 @@ const SkillDesc = styled.div`
 
 const MySkills = () => {
   // const [loading, setLoading] = useState(true);
-  const [jobs, setJobs] = useState(SkillData);
+  // const [jobs, setJobs] = useState(SkillData);
   const [value, setValue] = useState(0);
 
-  const { company, duties } = jobs[value];
+  const { company, duties } = SkillData[value];
 
   return (
     <Section id="mySkills">
@@ -242,7 +242,7 @@ const MySkills = () => {
       </BoxTitleContainer>
       <MySkillCenter>
         <ButtonContainer>
-          {jobs.map((item, index) => {
+          {SkillData.map((item, index) => {
             return (
               <button
                 key={item.id}

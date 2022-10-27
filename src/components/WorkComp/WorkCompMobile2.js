@@ -167,8 +167,7 @@ const Git = styled.a`
 `;
 
 const WorkCompMobile2 = (props) => {
-  const { id, order, type, name, description, tags, visit, github, imgSrc } =
-    props.work;
+  const { type, name, description, tags, visit, github } = props.work;
   return (
     <Box>
       <ImageBox>
