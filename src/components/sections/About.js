@@ -206,10 +206,14 @@ const SkillList = styled.ul`
   }
 `;
 const ListItem = styled.li`
-  text-indent: 2rem;
+  text-indent: 1.5rem;
   line-height: 2rem;
   font-size: ${(props) => props.theme.fontsm};
   display: flex;
+
+  & > *:nth-child(1) {
+    margin-top: 9px;
+  }
 
   .fill-play {
     color: ${(props) => props.theme.text};
