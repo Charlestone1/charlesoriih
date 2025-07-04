@@ -242,11 +242,10 @@ const Contact = () => {
         <p>
           I'm currently available for Front-End Web Development job positions,
           either remote or hybrid, and any related freelancing opportunity that
-          I consider profitable to me. I'm also available for internship
-          positions or to work with a team to improve on my skill set.
+          I consider profitable to me.
         </p>
         <ButtonContainer>
-          <Btn href="mailto:charlesorih@gmail.com">Send me a mail</Btn>
+          <Btn href="mailto:charlesorih007@gmail.com">Send me a mail</Btn>
         </ButtonContainer>
       </ContentContainer>
     </Section>

@@ -83,14 +83,14 @@ const Footer = () => {
         <div className="IconDiv">
           <IconList>
             <a
-              href="mailto:charlesorih@gmail.com"
+              href="mailto:charlesorih007@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaEnvelope />
             </a>
             <a
-              href="http://linkedIn.com/Charlesoriih"
+              href="https://www.linkedin.com/in/charles-oriih-17887316a/"
               target="_blank"
               rel="noopener noreferrer"
             >

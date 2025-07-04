@@ -200,7 +200,7 @@ const SocialIcons = (props) => {
           <SocialLink
             style={{ color: "inherit" }}
             target="_blank"
-            href="https://linkedin.com/Charlesoriih"
+            href="https://www.linkedin.com/in/charles-oriih-17887316a/"
           >
             <BsLinkedin
               className="linkdn"
@@ -239,7 +239,7 @@ const SocialIcons = (props) => {
           <SocialLink
             style={{ color: "inherit" }}
             target="_blank"
-            href="mailto: charlesorih@gmail.com"
+            href="mailto: charlesorih007@gmail.com"
           >
             <MdEmail
               className="mail"

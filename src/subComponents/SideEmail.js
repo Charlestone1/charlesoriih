@@ -92,7 +92,7 @@ const sideEmail = (props) => {
         <NavLink
           style={{ color: "inherit" }}
           target="_blank"
-          to={{ pathname: "mailto:charlesorih@gmail.com" }}
+          to={{ pathname: "mailto:charlesorih007@gmail.com" }}
         >
           <MdEmail
             className="mail"
@@ -110,7 +110,7 @@ const sideEmail = (props) => {
         <NavLink
           style={{ color: "inherit" }}
           target="_blank"
-          to={{ pathname: "http://linkedIn.com/Charlesoriih" }}
+          to={{ pathname: "https://www.linkedin.com/in/charles-oriih-17887316a/" }}
         >
           <BsLinkedin
             className="linkdn"
