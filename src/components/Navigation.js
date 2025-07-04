@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Button from "../subComponents/Button";
 import Logo from "./Logo";
 import "../styles/Stickyscrollup.css";
+import CVButton from "../subComponents/CVButton";
 
 const Section = styled.header`
   width: 100vw;
@@ -153,6 +154,25 @@ const HamburgerMenu = styled.span`
 const Navigation = () => {
   const [click, setClick] = useState(false);
 
+
+  const downloadCV = async () => {
+  try {
+    const response = await fetch('https://res.cloudinary.com/stone-soft/image/upload/v1751608072/CharlesOriih/Charles_Okechukwu_Oriih_b1prym.pdf');
+    const blob = await response.blob();
+
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.setAttribute('download', 'Charles_Oriih_CV.pdf.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
+  } catch (error) {
+    console.error('Error downloading CV:', error);
+  }
+};
+
   const scrollTo = (id) => {
     let element = document.getElementById(id);
 
@@ -199,13 +219,15 @@ const Navigation = () => {
           <MenuItem>
             <div className="mobile">
               {/*  link="https://www.google.com" */}
-              <Button text="Resume" />
+              {/* <Button text="Resume" /> */}
+               <CVButton text="Download CV" click={downloadCV} />
             </div>
           </MenuItem>
         </Menu>
         <DesktopResume className="desktop">
           {/* link="https://www.google.com" */}
-          <Button text="Resume" />
+          {/* <Button text="Resume"   /> */}
+           <CVButton text="Download CV" click={downloadCV} />
         </DesktopResume>
       </NavBar>
     </Section>

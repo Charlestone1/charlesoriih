@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
-import NftImg from "../../assets/images/MobileImage/NFTMobileTrans.png";
+import Clusttr from "../../assets/images/MobileImage/clusttrTrans.png";
 
 const Box = styled.div`
   display: flex;
@@ -10,24 +10,17 @@ const Box = styled.div`
   align-items: center;
   width: 98vw;
   margin-bottom: 3rem;
-  /* min-height: 60vh; */
 `;
 
 const ImageBox = styled.div`
-  /* border: 1px solid green; */
   width: 100%;
-  /* height: 300px; */
-  overflow: hidden;
-  /* margin: 2rem; */
-  background-color: blue;
+  background-color: gray;
   border-radius: 10px 10px 0px 0px;
-  /*  */
 `;
 
 const ImageContainer = styled.div`
   width: 100%;
   height: 100%;
-  /* border: 2px solid rgb(243, 242, 242); */
   border-radius: 10px 10px 0px 0px;
   overflow: hidden;
 `;
@@ -65,16 +58,14 @@ const DetailsContainer = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  background-image: url(${NftImg});
+  background-image: url(${Clusttr});
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 `;
 const DetailsBox = styled.div`
-  /* border: 1px solid purple; */
   border-radius: 0.55rem;
   width: 80%;
-  z-index: 5;
   display: flex;
   flex-flow: column;
   align-items: flex-end;
@@ -93,7 +84,6 @@ const DetailsBox = styled.div`
   }
 `;
 const HeaderBox = styled.div`
-  /* border: 1px solid blue; */
   width: 80%;
   font-family: "Poppins", cursive;
   display: flex;
@@ -110,7 +100,6 @@ const ProjectType = styled.p`
 `;
 const ProjectName = styled.a`
   font-size: ${(props) => props.theme.fontmd};
-  /* color: ${(props) => props.theme.slate}; */
   color: #fff;
   text-transform: capitalize;
   padding: 0.2rem 0;
@@ -126,18 +115,14 @@ const ProjectName = styled.a`
 const Desc = styled.div`
   background-color: ${(props) => `rgba(${props.theme.bodyRgba},0.8)`};
   color: ${(props) => props.theme.slate};
-  /* color: #fff; */
   padding: 10px;
   /* border-radius: 10px 0 0 10px; */
   line-height: 1.3rem;
   text-align: justify;
   box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* border: 1px solid blue; */
 `;
 const FooterBox = styled.div`
-  /* color: ${(props) => props.theme.slate}; */
   color: #fff;
-  /* border: 1px solid blue; */
   width: 93%;
   margin: 0.4rem 0.1rem;
 
@@ -178,7 +163,7 @@ const Git = styled.a`
   }
 `;
 
-const WorkCompMobile = (props) => {
+const WorkCompMobile4 = (props) => {
   const { type, name, description, tags, visit, github } = props.work;
   return (
     <Box>
@@ -227,4 +212,4 @@ const WorkCompMobile = (props) => {
     </Box>
   );
 };
-export default WorkCompMobile;
+export default WorkCompMobile4;

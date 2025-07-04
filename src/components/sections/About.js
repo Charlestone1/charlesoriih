@@ -248,17 +248,14 @@ const About = () => {
         <Box>
           <Subtext>
             <Paragraph>
-              Hey! My name is <span className="nameSpan"> Charles Oriih </span>
-              and I enjoy creating functional and beautiful websites. My
-              interest in web development started back in 2017 out of
-              curiousity.
+              Hi, I’m  <span className="nameSpan"> Charles Oriih </span>
+              — a passionate web developer who loves crafting websites that are both functional and visually appealing.
             </Paragraph>
             <Paragraph>
-              My journey through the University opened me up to research, and it
-              demanded me to visit variety of websites of which some was
-              beautiful and functional, while some others was not. Curiousity
-              led me to begin to inquire how the beautiful websites was built,
-              that was where I met HTML and CSS and Javascript.
+             My journey into web development began in 2017, sparked by a simple curiosity. While studying at the university, I often found myself exploring countless websites for research purposes. Some were stunning and user-friendly, while others were clunky and hard to use. That contrast got me thinking: What makes a website truly great?
+            </Paragraph>
+            <Paragraph>
+              Driven by that question, I started digging deeper — and that’s when I discovered HTML, CSS, and JavaScript. What began as a curiosity soon became a passion. Since then, I’ve been committed to learning and building web experiences that not only look good but also work seamlessly.
             </Paragraph>
             <Paragraph>
               Here are a few technologies I've been working with recently:
@@ -271,10 +268,13 @@ const About = () => {
                 <BsFillPlayFill className="fill-play" /> React.Js
               </ListItem>
               <ListItem>
+                <BsFillPlayFill className="fill-play" /> Next.Js
+              </ListItem>
+              <ListItem>
                 <BsFillPlayFill className="fill-play" /> Tailwind
               </ListItem>
               <ListItem>
-                <BsFillPlayFill className="fill-play" /> Figma
+                <BsFillPlayFill className="fill-play" /> Typescript
               </ListItem>
             </SkillList>
           </Subtext>

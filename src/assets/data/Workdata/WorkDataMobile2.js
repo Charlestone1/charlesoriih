@@ -1,7 +1,7 @@
 const WorkDataMob2 = [
   {
     id: 8,
-    order: 2,
+    order: 6,
     type: "Side Project",
     name: "Fin-tech Website",
     description:

@@ -91,6 +91,7 @@ const HeaderBox = styled.div`
   justify-content: center;
   align-items: flex-end;
   font-weight: 100;
+  padding: 0 5px;
 `;
 const ProjectType = styled.p`
   font-size: ${(props) => props.theme.fontsm};
@@ -143,6 +144,8 @@ const Tag = styled.span`
 
 const Linkz = styled.div`
   padding-top: 0.3rem;
+  padding-right: 7px;
+  padding-left: 7px;
   font-size: ${(props) => props.theme.fontlg};
   display: flex;
 `;

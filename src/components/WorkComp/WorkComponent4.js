@@ -1,38 +1,46 @@
 import React from "react";
 import styled from "styled-components";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
-import NftImg from "../../assets/images/MobileImage/NFTMobileTrans.png";
 
 const Box = styled.div`
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
   align-items: center;
-  width: 98vw;
-  margin-bottom: 3rem;
-  /* min-height: 60vh; */
+  min-width: 80vw;
+  min-height: 80vh;
 `;
 
 const ImageBox = styled.div`
   /* border: 1px solid green; */
-  width: 100%;
-  /* height: 300px; */
+  width: 45%;
+  height: 350px;
+
+  /* position: relative; */
   overflow: hidden;
   /* margin: 2rem; */
-  background-color: blue;
-  border-radius: 10px 10px 0px 0px;
+  /* background-color: blue; */
   /*  */
 `;
 
 const ImageContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  /* border: 2px solid rgb(243, 242, 242); */
+  width: 99%;
+  height: 99%;
+  border: 2px solid rgb(243, 242, 242);
   border-radius: 10px 10px 0px 0px;
   overflow: hidden;
 `;
 const ImageLink = styled.a`
   position: relative;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: ${(props) => `rgba(${props.theme.textRgba},0.35)`};
+  }
 `;
 const ImageBrowser = styled.div`
   height: 20px;
@@ -47,6 +55,7 @@ const Circle = styled.div`
   height: 6px;
   border-radius: 50%;
   margin: 3px;
+  /* background-color: blue; */
 
   &:first-child {
     background-color: green;
@@ -58,63 +67,51 @@ const Circle = styled.div`
     background-color: red;
   }
 `;
+const Image = styled.img`
+  width: 100%;
+  transition: all 6s ease;
 
-const DetailsContainer = styled.div`
-  width: 98vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  background-image: url(${NftImg});
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  ${ImageContainer}:hover & {
+    transform: translateY(-85%);
+  }
 `;
 const DetailsBox = styled.div`
-  /* border: 1px solid purple; */
-  border-radius: 0.55rem;
-  width: 80%;
-  z-index: 5;
+  /* border: 1px solid blue; */
+  width: 45%;
+  height: 350px;
+  /* margin: 2rem; */
+  /* background-color: blue; */
   display: flex;
   flex-flow: column;
   align-items: flex-end;
   justify-content: center;
-  margin: 6rem 0;
-  background-color: ${(props) => `rgba(${props.theme.bodyRgba},0.75)`};
-
-  @media (max-width: 42em) {
-    margin: 4.5rem 0;
-  }
-  @media (max-width: 37em) {
-    margin: 3rem 0;
-  }
-  @media (max-width: 30em) {
-    margin: 2rem 0;
-  }
 `;
 const HeaderBox = styled.div`
   /* border: 1px solid blue; */
   width: 80%;
+  /* height: 100px; */
+  /* margin: 2rem; */
+  /* background-color: purple; */
+  /* background-color: ${(props) => props.theme.body}; */
+
   font-family: "Poppins", cursive;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: flex-end;
   font-weight: 100;
-  padding: 0 5px;
 `;
 const ProjectType = styled.p`
   font-size: ${(props) => props.theme.fontsm};
   color: ${(props) => props.theme.text};
-  padding-top: 0.1rem;
+  padding-bottom: 1rem;
 `;
 const ProjectName = styled.a`
-  font-size: ${(props) => props.theme.fontmd};
-  /* color: ${(props) => props.theme.slate}; */
-  color: #fff;
+  font-size: ${(props) => props.theme.fontlg};
+  color: ${(props) => props.theme.slate};
   text-transform: capitalize;
-  padding: 0.2rem 0;
-  font-weight: 300;
+  padding: 0.6rem 0;
+  font-weight: 900;
   text-decoration: none;
   transition: all 0.2s linear;
 
@@ -124,22 +121,24 @@ const ProjectName = styled.a`
 `;
 
 const Desc = styled.div`
-  background-color: ${(props) => `rgba(${props.theme.bodyRgba},0.8)`};
+  background-color: #0e2444;
   color: ${(props) => props.theme.slate};
-  /* color: #fff; */
   padding: 10px;
-  /* border-radius: 10px 0 0 10px; */
+  border-radius: 10px;
   line-height: 1.3rem;
-  text-align: justify;
   box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /* border: 1px solid blue; */
+  /* width: 100%; */
+  /* height: 100px; */
+  /* background-color: green; */
 `;
 const FooterBox = styled.div`
-  /* color: ${(props) => props.theme.slate}; */
-  color: #fff;
+  color: ${(props) => props.theme.slate};
   /* border: 1px solid blue; */
-  width: 93%;
-  margin: 0.4rem 0.1rem;
+  width: 90%;
+  /* height: 100px; */
+  margin: 1rem 0;
+  /* background-color: violet; */
 
   display: flex;
   flex-flow: column;
@@ -149,7 +148,7 @@ const FooterBox = styled.div`
 
 const HashTags = styled.div``;
 const Tag = styled.span`
-  padding: 0.3rem;
+  padding: 0.5rem;
   font-size: ${(props) => props.theme.fontsm};
 
   &:last-child {
@@ -158,9 +157,7 @@ const Tag = styled.span`
 `;
 
 const Linkz = styled.div`
-  padding-top: 0.3rem;
-  padding-right: 7px;
-  padding-left: 7px;
+  padding-top: 1.5rem;
   font-size: ${(props) => props.theme.fontlg};
   display: flex;
 `;
@@ -178,8 +175,9 @@ const Git = styled.a`
   }
 `;
 
-const WorkCompMobile = (props) => {
-  const { type, name, description, tags, visit, github } = props.work;
+const WorkComponent4 = (props) => {
+  const { type, name, description, tags, visit, github, imgSrc } = props.work;
+
   return (
     <Box>
       <ImageBox>
@@ -190,41 +188,42 @@ const WorkCompMobile = (props) => {
               <Circle />
               <Circle />
             </ImageBrowser>
-            {/* <Image src={imgSrc} alt="images" className="p-img" /> */}
+            {/* <a href={visit} target="_blank" rel="noreferrer"> */}
+            <Image src={imgSrc} alt="images" className="p-img" />
+            {/* </a> */}
           </ImageLink>
-          <DetailsContainer>
-            <DetailsBox>
-              <HeaderBox>
-                <ProjectType> {type}</ProjectType>
-                <ProjectName href={visit} target="_blank" rel="noreferrer">
-                  {name}
-                </ProjectName>
-              </HeaderBox>
-              <Desc>{description}</Desc>
-              <FooterBox>
-                <HashTags>
-                  {tags.map((tag, id) => {
-                    return <Tag key={id}>#{tag}</Tag>;
-                  })}
-                </HashTags>
-                <Linkz>
-                  <Visit href={visit} target="_blank" rel="noreferrer">
-                    <span>
-                      <FiExternalLink />
-                    </span>
-                  </Visit>
-                  <Git href={github} target="_blank" rel="noreferrer">
-                    <span>
-                      <FiGithub />
-                    </span>
-                  </Git>
-                </Linkz>
-              </FooterBox>
-            </DetailsBox>
-          </DetailsContainer>
         </ImageContainer>
       </ImageBox>
+      <DetailsBox>
+        <HeaderBox>
+          <ProjectType> {type}</ProjectType>
+          <ProjectName href={visit} target="_blank" rel="noreferrer">
+            {name}
+          </ProjectName>
+        </HeaderBox>
+        <Desc>{description}</Desc>
+        <FooterBox>
+          <HashTags>
+            {tags.map((tag, id) => {
+              return <Tag key={id}>#{tag}</Tag>;
+            })}
+          </HashTags>
+          <Linkz>
+            <Visit href={visit} target="_blank" rel="noreferrer">
+              <span>
+                <FiExternalLink />
+              </span>
+            </Visit>
+            <Git href={github} target="_blank" rel="noreferrer">
+              <span>
+                <FiGithub />
+              </span>
+            </Git>
+          </Linkz>
+        </FooterBox>
+      </DetailsBox>
     </Box>
   );
 };
-export default WorkCompMobile;
+
+export default WorkComponent4;

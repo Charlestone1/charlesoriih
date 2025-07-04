@@ -1,5 +1,5 @@
 import React from "react";
-import { light } from "../styles/Themes";
+// import { light } from "../styles/Themes";
 import styled from "styled-components";
 import Passport from "../assets/images/Passport.jpg";
 

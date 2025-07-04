@@ -3,6 +3,7 @@ import styled from "styled-components";
 import WorkData from "../../assets/data/Workdata/WorkData";
 import WorkData2 from "../../assets/data/Workdata/WorkData2";
 import WorkData3 from "../../assets/data/Workdata/WorkData3";
+import WorkData4 from "../../assets/data/Workdata/WorkData4.js";
 import WorkDataMobile from "../../assets/data/Workdata/WorkDataMobile";
 import WorkDataMobile2 from "../../assets/data/Workdata/WorkDataMobile2";
 import WorkDataMobile3 from "../../assets/data/Workdata/WorkDataMobile3";
@@ -12,6 +13,11 @@ import WorkCompMobile2 from "../WorkComp/WorkCompMobile2";
 import WorkComponent from "../WorkComp/WorkComponent";
 import WorkComponent2 from "../WorkComp/WorkComponent2";
 import { BsPlay } from "react-icons/bs";
+import WorkDataMobile4 from "../../assets/data/Workdata/WorkDataMobile4";
+import WorkCompMobile4 from "../WorkComp/WorkCompMobile4";
+import WorkData5 from "../../assets/data/Workdata/WorkData5";
+import WorkDataMobile5 from "../../assets/data/Workdata/WorkDataMobile5";
+import WorkCompMobile5 from "../WorkComp/WorkCompMobile5";
 
 const Container = styled.section`
   min-height: 100vh;
@@ -183,7 +189,10 @@ const Works = () => {
           <BoxTitle></BoxTitle>
         </BoxTitleContainer>
         <BoxContainer>
-          {WorkData.map((work) => {
+          {WorkData4.map((work) => {
+            return <WorkComponent2 key={work.id} work={work} />;
+          })}
+          {WorkData5.map((work) => {
             return <WorkComponent key={work.id} work={work} />;
           })}
           {WorkData2.map((work) => {
@@ -192,16 +201,25 @@ const Works = () => {
           {WorkData3.map((work) => {
             return <WorkComponent key={work.id} work={work} />;
           })}
+          {WorkData.map((work) => {
+            return <WorkComponent2 key={work.id} work={work} />;
+          })}
         </BoxContainer>
         <BoxMobile>
-          {WorkDataMobile.map((work) => {
-            return <WorkCompMobile key={work.id} work={work} />;
+          {WorkDataMobile4.map((work) => {
+            return <WorkCompMobile4 key={work.id} work={work} />;
+          })}
+          {WorkDataMobile5.map((work) => {
+            return <WorkCompMobile5 key={work.id} work={work} />;
           })}
           {WorkDataMobile2.map((work) => {
             return <WorkCompMobile2 key={work.id} work={work} />;
           })}
           {WorkDataMobile3.map((work) => {
             return <WorkCompMobile3 key={work.id} work={work} />;
+          })}
+          {WorkDataMobile.map((work) => {
+            return <WorkCompMobile key={work.id} work={work} />;
           })}
         </BoxMobile>
       </Section>

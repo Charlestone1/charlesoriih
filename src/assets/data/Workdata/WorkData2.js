@@ -1,7 +1,7 @@
 const WorkData = [
   {
     id: 2,
-    order: 2,
+    order: 4,
     type: "Side Project",
     name: "Fin-tech Website",
     description:
