@@ -38,6 +38,9 @@ const Title = styled.div`
   .text-3 {
     color: ${(props) => props.theme.myGreen};
   }
+  .text-4 {
+    color: ${(props) => props.theme.myPurple};
+  }
 
   @media (max-width: 70em) {
     font-size: ${(props) => props.theme.fontxl};
@@ -136,10 +139,13 @@ const TypeWriterText = () => {
               .typeString(`<span class='text-1'>React.js</span>`)
               .pauseFor(2000)
               .deleteAll()
-              .typeString(`<span class='text-2'>Designer</span>`)
+              .typeString(`<span class='text-2'>JavaScript.</span>`)
               .pauseFor(2000)
               .deleteAll()
-              .typeString(`<span class='text-3'>Figma.</span>`)
+              .typeString(`<span class='text-3'>TypeScript.</span>`)
+              .pauseFor(2000)
+              .deleteAll()
+              .typeString(`<span class='text-4'>Next.js.</span>`)
               .pauseFor(2000)
               .deleteAll()
               .start();

@@ -6,6 +6,7 @@ export const light = {
   textWhite: "#fff",
   textBlack: "#202020",
   myGreen: "#61FB82",
+  myPurple: "#8A2BE2",
   // myGreen: "#64ffda",
   slate: "#8892b0",
   myYellow: "#FBCF61",
